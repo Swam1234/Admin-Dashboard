@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Activity</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
+    <script src="vendor/font-awesome/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pre-loading">
+        <span class="spinner-grow text-info"></span>
+    </div>
+
+    <div class="container-fluid whole-body">
+        <div class="row">
+            <!-- Sidebar Section -->
+            <div class="col-12 col-lg-2 vh-100" id="sidebar">
+                <!-- Sidebar Header -->
+                <div class="bg-info bg-gradient row position-sticky top-0" id="sidebar-header">
+                    <div class="pt-3 pb-4 d-flex justify-content-between align-items-start">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="vendor/images/my-proFile (2).jpeg" class="rounded-circle"
+                                style="height: 90px; width: 90px;" alt="">
+                            <div class="h6 text-white text-center">Swam Htet Paing</div>
+                            <small class="text-white-50 text-center">Web-Developer</small>
+                        </div>
+                        <button class="btn btn-info d-block d-lg-none" id="sidebar-close-btn"><i
+                                class="fa-solid fa-rectangle-xmark text-white fs-3"></i></button>
+                    </div>
+                </div>
+
+                <!-- Sidebar Links -->
+                <div class="row d-flex flex-column align-items-center justify-content-center">
+                    <a href="dashboard.html"
+                        class="py-3 ps-4 mt-1 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-gauge-high text-info pe-4"></i><small>Dashboard</small>
+                    </a>
+                    <a href="recent-activity.html"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn active-link">
+                        <i class="fa-solid fa-clock-rotate-left text-info pe-4"></i> <small>Recent Activity</small>
+                        <div class="active-line"></div>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-chart-area text-info pe-4"></i> <small>Metrics</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-hands-holding-circle text-info pe-4
+                        "></i> <small>Modify Products</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-folder text-info pe-4"></i> <small>Suveys</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-star text-info pe-4"></i> <small>Favourites</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-calendar-check text-info pe-4"></i> <small>Calendar and Meetings</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-triangle-exclamation text-info pe-4"></i> <small>Alerts</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-circle-question text-info pe-4"></i> <small>Help</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn mt-5">
+                        <i class="fa-solid fa-gear text-info pe-4"></i> <small class="fw-bolder">Settings</small>
+                    </a>
+                </div>
+            </div>
+            <!-- Content Section -->
+            <div class="col-12 col-lg-10 vh-100 bg-light" id="content">
+                <div class="row header py-3 px-0 bg-secondary align-items-center position-sticky top-0"
+                    style="z-index: 1000;">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <button id="sidebar-open-btn"
+                            class="btn btn-secondary d-block d-lg-none position-absolute top-0 start-0"><i
+                                class="fas fa-bars fs-3"></i></button>
+                        <div class="h5 mb-4 mb-lg-0 text-white">Recent Activity <i
+                                class="fa-solid fa-clock-rotate-left text-info"></i></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form class="d-flex justify-content-between align-items-center">
+                            <div class="input-group w-50">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button class="input-group-text bg-info border-0"><i
+                                        class="fa-solid fa-magnifying-glass text-white"></i></button>
+                            </div>
+                            <button class="btn btn-secondary position-relative">
+                                <i class="fa-solid fa-message text-white fs-3"></i>
+                                <span class="position-absolute top-1 start-95 translate-middle p-1 bg-success border border-1
+                                    border-success rounded-circle">
+                                </span>
+                            </button>
+                            <button class="btn btn-secondary position-relative">
+                                <i class="fa-brands fa-spotify fs-3"></i>
+                                <span class="position-absolute top-1 start-95 translate-middle p-1 bg-danger border border-1
+                                border-danger rounded-circle">
+                                </span>
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fa-solid fa-ellipsis-vertical text-white fs-3"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="h-100 d-flex justify-content-center align-items-center">
+                    <h3 class="text-secondary">Recent was cleared!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
+    <script src="vendor/font-awesome/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <div class="pre-loading">
+        <span class="spinner-grow text-info"></span>
+    </div>
+
+    <div class="container-fluid whole-body">
+        <div class="row">
+            <!-- Sidebar Section -->
+            <div class="col-12 col-lg-2 vh-100" id="sidebar">
+                <!-- Sidebar Header -->
+                <div class="bg-info bg-gradient row position-sticky top-0" id="sidebar-header">
+                    <div class="pt-3 pb-4 d-flex justify-content-between align-items-start">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="vendor/images/my-proFile (2).jpeg" class="rounded-circle"
+                                style="height: 90px; width: 90px;" alt="">
+                            <div class="h6 text-white text-center">Swam Htet Paing</div>
+                            <small class="text-white-50 text-center">Web-Developer</small>
+                        </div>
+                        <button class="btn btn-info d-block d-lg-none" id="sidebar-close-btn"><i
+                                class="fa-solid fa-rectangle-xmark text-white fs-3"></i></button>
+                    </div>
+                </div>
+
+                <!-- Sidebar Links -->
+                <div class="row d-flex flex-column align-items-center justify-content-center">
+                    <a href="dashboard.html"
+                        class="py-3 ps-4 mt-1 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn active-link">
+                        <i class="fa-solid fa-gauge-high text-info pe-4"></i><small>Dashboard</small>
+                        <div class="active-line"></div>
+                    </a>
+                    <a href="recent-activity.html"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-clock-rotate-left text-info pe-4"></i> <small>Recent Activity</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-chart-area text-info pe-4"></i> <small>Metrics</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-hands-holding-circle text-info pe-4
+                        "></i> <small>Modify Products</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-folder text-info pe-4"></i> <small>Suveys</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-star text-info pe-4"></i> <small>Favourites</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-calendar-check text-info pe-4"></i> <small>Calendar and Meetings</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-solid fa-triangle-exclamation text-info pe-4"></i> <small>Alerts</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn">
+                        <i class="fa-regular fa-circle-question text-info pe-4"></i> <small>Help</small>
+                    </a>
+                    <a href="#"
+                        class="py-3 ps-4 text-secondary d-flex justify-content-start align-items-center sidebar-links-btn mt-5">
+                        <i class="fa-solid fa-gear text-info pe-4"></i> <small class="fw-bolder">Settings</small>
+                    </a>
+                </div>
+            </div>
+            <!-- Content Section s-->
+            <div class="col-12 col-lg-10 vh-100 bg-light" id="content">
+                <!-- Content Header -->
+                <div class="row header py-3 px-0 bg-secondary align-items-center position-sticky top-0"
+                    style="z-index: 1000;">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <button id="sidebar-open-btn"
+                            class="btn btn-secondary d-block d-lg-none position-absolute top-0 start-0"><i
+                                class="fas fa-bars fs-3"></i></button>
+                        <div class="h5 mb-4 mb-lg-0 text-white">Dashboard <i
+                                class="fa-solid fa-gauge-high text-info"></i></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form class="d-flex justify-content-between align-items-center">
+                            <div class="input-group w-50">
+                                <input type="text" class="form-control" placeholder="Search" style="height: 35px;">
+                                <button class="input-group-text border-0 bg-info">
+                                    <i class="fa-solid fa-magnifying-glass text-white"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary position-relative">
+                                <i class="fa-solid fa-message text-white fs-3"></i>
+                                <span class="position-absolute top-1 start-95 translate-middle p-1 bg-success border border-1
+                                    border-success rounded-circle">
+                                </span>
+                            </button>
+                            <button class="btn btn-secondary position-relative">
+                                <i class="fa-brands fa-spotify fs-3"></i>
+                                <span class="position-absolute top-1 start-95 translate-middle p-1 bg-danger border border-1
+                                border-danger rounded-circle">
+                                </span>
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fa-solid fa-ellipsis-vertical text-white fs-3"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Content inner -->
+                <div class="row align-items-end">
+                    <div class="col-12 col-md-12 col-lg-9 mt-4">
+                        <div class="fw-bold text-secondary graph-header">Top Reviews</div>
+                        <div class="card border-0 shadow">
+                            <table class="table table-borderless table-responsive table-hover mb-0">
+                                <thead>
+                                    <tr class="text-secondary">
+                                        <th class="text-mute">Customers</th>
+                                        <th class="text-mute">Reviews</th>
+                                        <th class="text-mute">Product ID</th>
+                                        <th class="text-mute">Ratings</th>
+                                        <th class="text-mute"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-muted">
+                                        <td>Mg Mg</td>
+                                        <td class="text-warning">Good Services</td>
+                                        <td>HP 14 AMD Ryzen 5</td>
+                                        <td>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </td>
+                                        <td class="text-center"><button>More info</button></td>
+                                    </tr>
+                                    <tr class="text-muted">
+                                        <td>Kyaw Kyaw</td>
+                                        <td class="text-warning">Good Services</td>
+                                        <td>HP 14Q CSS009TU 2019</td>
+                                        <td>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </td>
+                                        <td class="text-center"><button>More info</button></td>
+                                    </tr>
+                                    <tr class="text-muted">
+                                        <td>Zaw Zaw</td>
+                                        <td class="text-warning">Good Services</td>
+                                        <td>HP 15 Pentium 15-6-inch</td>
+                                        <td>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </td>
+                                        <td class="text-center"><button>More info</button></td>
+                                    </tr>
+                                    <tr class="text-muted">
+                                        <td>Swam Swam</td>
+                                        <td class="text-warning">Good Services</td>
+                                        <td>HP 15 AMD A6 15.6*</td>
+                                        <td>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star"></i>
+                                        </td>
+                                        <td class="text-center"><button>More info</button></td>
+                                    </tr>
+                                    <tr class="text-muted">
+                                        <td>Su Su</td>
+                                        <td class="text-warning">I feel like this is not good for me.</td>
+                                        <td>HP 15 core i3 7th gen</td>
+                                        <td>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </td>
+                                        <td class="text-center"><button>More info</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="fw-bold text-secondary graph-header">Product Overall Rating</div>
+                        <div class="card border-0 shadow">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <small class="w-100 text-end text-muted small-date">Aug to Dec 2021</small>
+                                <div class="rating-circle">
+                                    <h2 class="mb-0 text-secondary text-muted fw-bolder">4.1</h2>
+                                    <small class="text-secondary">From Buyers</small>
+                                </div>
+                                <div class="w-100 d-flex justify-content-between align-items-center mt-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="rating-dot bg-success"></div>
+                                        <small class="rating-small-content">Positive</small>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="rating-dot bg-warning"></div>
+                                        <small class="rating-small-content">Neutral</small>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="rating-dot bg-danger"></div>
+                                        <small class="rating-small-content">Negative</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-4">
+                        <div class="fw-bold text-secondary graph-header">Sales Overview</div>
+                        <div class="card border-0 shadow">
+                            <div class="card-body d-flex justify-content-around align-items-center">
+                                <i class="fa-brands fa-shopify fs-1 text-warning"></i>
+                                <div class="text-secondary">
+                                    <h2 class="counter">1082</h2>
+                                    <small>Products Sold</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow mt-2">
+                            <div class="card-body d-flex justify-content-around align-items-center">
+                                <i class="fa-solid fa-hand-holding-dollar fs-1 text-warning"></i>
+                                <div class="text-secondary">
+                                    <h2 class="counter">2M $</h2>
+                                    <small>Total Revenue</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="fw-bold text-secondary graph-header">Customers' Emotional Analysis</div>
+                        <div class="card border-0 shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                    <div
+                                        class="col-5 d-flex flex-column justify-content-around align-items-start text-secondary">
+                                        <div class="emoji-container">
+                                            <div class="emotional-sign bg-success"></div>
+                                            <span>&#128513;</span>
+                                            <span class="emoji-text">Happy</span>
+                                        </div>
+                                        <div class="emoji-container">
+                                            <div class="emotional-sign bg-warning"></div>
+                                            <span>&#128515;</span>
+                                            <span class="emoji-text">Satisfied</span>
+                                        </div>
+                                        <div class="emoji-container">
+                                            <div class="emotional-sign bg-danger"></div>
+                                            <span>&#128544;</span>
+                                            <span class="emoji-text">Angry</span>
+                                        </div>
+                                        <div class="emoji-container">
+                                            <div class="emotional-sign bg-light"></div>
+                                            <span>&#128529;</span>
+                                            <span class="emoji-text">No Comments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 mt-4">
+                        <div class="fw-bold text-secondary graph-header">Customers' Sarcastic Meter</div>
+                        <div class="card border-0 shadow">
+                            <canvas id="bar" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Footer -->
+                <div class="row mt-4 g-3 pb-5 align-items-end" id="content-footer">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="fw-bold text-secondary graph-header">Social Media Followers</div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body d-flex justify-content-around align-items-center">
+                                <img src="vendor/images/facebook.png" alt="" class="shopping-img">
+                                <div>
+                                    <h3 class="mb-0 counter">8052</h3>
+                                    <small>Followers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body  d-flex justify-content-around align-items-center">
+                                <img src="vendor/images/instagram.png" alt="" class="shopping-img">
+                                <div>
+                                    <h3 class="mb-0">2550</h3>
+                                    <small>Followers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body  d-flex justify-content-around align-items-center">
+                                <img src="vendor/images/twitter.png" alt="" class="shopping-img">
+                                <div>
+                                    <h3 class="mb-0">1490</h3>
+                                    <small>Followers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body  d-flex justify-content-around align-items-center">
+                                <img src="vendor/images/linkedin.png" alt="" class="shopping-img">
+                                <div>
+                                    <h3 class="mb-0">4956</h3>
+                                    <small>Followers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="fw-bold text-secondary graph-header">Online Sales Overview</div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body  d-flex justify-content-around align-items-center">
+                                <img src="vendor/images/amazon-pay.png" alt="" class="shopping-img">
+                                <div>
+                                    <h3 class="mb-0">847</h3>
+                                    <small>Product Sold</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body  d-flex justify-content-around align-items-center">
+                                <img src="vendor/images/letter-g.png" alt="" class="shopping-img">
+                                <div>
+                                    <h3 class="mb-0">607</h3>
+                                    <small>Product Sold</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/chart js/chart.min.js"></script>
+    <script src="graph.js"></script>
+    <script src="app.js"></script>
+    <!-- 
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="vendor/way_point/waypoint.js"></script>
+    <script src="vendor/counter_up/counter_up.js"></script> -->
+</body>
+
+</html>
