@@ -5,6 +5,8 @@ window.addEventListener("load", () => {
         document.querySelector(".whole-body").style.display = "block";
     }, 1000)
 })
+
+
 //Loading Page Animation End
 
 

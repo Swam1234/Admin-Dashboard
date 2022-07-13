@@ -1,0 +1,33 @@
+.first-header {
+  padding-right: 7px;
+}
+
+.second-header {
+  position: relative;
+}
+
+.second-header::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: red;
+  opacity: 1;
+  animation: typing 0.6s ease infinite ;
+}
+
+@keyframes typing {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .second-header,
+  .first-header {
+    font-size: 1rem !important;
+  }
+}
